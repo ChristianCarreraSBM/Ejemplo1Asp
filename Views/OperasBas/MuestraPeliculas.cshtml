@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "MuestraPeliculas";
+}
+
+<h2>MuestraPeliculas</h2>
+
+@model List<Ejemplo1Asp.Models.Peliculas>
+    @{ 
+        ViewBag.Tittle = "MuestraPeliculas";
+    }
+
+<h2>Muestra Peliculas </h2>
+<html5>
+    <header></header>
+    <body>
+        <div>
+            <table class="table table-striped">
+                <thead>
+                    <th>Titulo</th>
+                    <th>Duración</th>
+                    <th>Pais</th>
+                    <th>Lanzamiento</th>
+                </thead>
+
+                @foreach( var pelicula in Model)
+            {
+                <tbody>
+                    <tr>
+                        <td>@pelicula.Titulo</td>
+                        <td>@pelicula.Duración</td>
+                        <td>@pelicula.Pais</td>
+                        <td>@pelicula.Publicacion</td>
+                    </tr>
+                </tbody>
+            }
+            </table>
+        </div>
+    </body>
+
+</html5>

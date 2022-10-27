@@ -1,0 +1,35 @@
+﻿@model Ejemplo1Asp.Services.Calculos
+
+@{
+    ViewBag.Title = "Sumar";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+
+            <form action="/" method="post">
+                <label for="Numero1">Numero1</label>
+                <input type="text" name="Numero1" value="" />
+                <br />
+                <label for="Numero2">Numero2</label>
+                <input type="text" name="Numero2" value="" />
+                <br />
+                <input type="submit" value="Calcular" />
+                <hr/>
+                <label for="r1">Sumar</label>
+                <input type="radio" id"r1" name"r1" value="Sumar" />
+                <label for="r2">Restar</label>
+                <input type="radio" id"r1" name"r1" value="Restar" />
+
+            </form>
+        </div>
+        <div class="col-lg-6"></div>
+        <h1>
+             La suma es:@ViewBag.res
+        </h1>
+    </div>
+ </div>
+
+
+
